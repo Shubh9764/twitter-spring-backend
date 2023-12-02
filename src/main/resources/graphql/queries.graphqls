@@ -1,0 +1,11 @@
+type Query {
+    #User
+    getCurrentUser:User
+    verifyGoogleToken(token:String!):String
+    getUserById(id:ID!):User
+
+    #Tweets
+
+    getAllTweets: [Tweet]
+    getSignedUrlForTweet(imageName:String! ,imageType:String!):String
+ }
