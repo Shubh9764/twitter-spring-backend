@@ -1,0 +1,6 @@
+type Mutation{
+    createTweet(payload:CreateTweetData!):Tweet
+
+    followUser(to:ID!):Boolean
+    unFollowUser(to:ID!):Boolean
+}
